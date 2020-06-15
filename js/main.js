@@ -5,13 +5,13 @@ window.addEventListener('load', () => {
 [].forEach.call(document.getElementsByClassName('image-viewer'), (el) => {
 
   let active = parseInt(el.dataset.active);
-  let total = el.getElementsByClassName('image-wrapper').length;
+  let total = el.getElementsByClassName('image-slide-wrapper').length;
   el.querySelector('.current').innerHTML = active + 1;
   el.querySelector('.total').innerHTML = total;
 
   el.addEventListener('pointermove', (e) => {
     let active = parseInt(el.dataset.active);
-    let total = el.getElementsByClassName('image-wrapper').length;
+    let total = el.getElementsByClassName('image-slide-wrapper').length;
     if (e.offsetX > el.offsetWidth/2) {
         el.style.setProperty('cursor', `e-resize`);
     } else {
@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
 
   el.addEventListener('click', (e) => {
     e.preventDefault();
-    let images = el.getElementsByClassName('image-wrapper');
+    let images = el.getElementsByClassName('image-slide-wrapper');
     let active = parseInt(el.dataset.active);
     let total = images.length;
     images[active].classList.remove('active');
@@ -83,7 +83,7 @@ videoctrl.onclick = function () {
     var pause = videoctrl.innerHTML === 'Stop playing';
     videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
 
-    // Update the Audio
+    // Update the video
     var method = pause ? 'pause' : 'play';
     videoplayerexample[method]();
 
@@ -97,7 +97,7 @@ videoplayerexample.onclick = function () {
     var pause = videoctrl.innerHTML === 'Stop playing';
     videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
 
-    // Update the Audio
+    // Update the video
     var method = pause ? 'pause' : 'play';
     videoplayerexample[method]();
 
@@ -108,10 +108,36 @@ videoplayerexample.onclick = function () {
 
 //inquiry form
 
-function openinquiryform() {
+function openInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "block";
 };
 
-function closeinquiryform() {
+function closeInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "none";
 };
+
+
+//horizontal scrolling
+
+(function () {
+
+	scrollConverter.activate();
+
+}());
+
+
+// modal
+var modal = document.getElementById('modal-frame');
+var img = document.getElementsByClassName('modal-enabled');
+var modalImg = document.getElementById("modal-image");
+
+[].forEach.call(document.getElementsByClassName('modal-enabled'), (el) =>  {
+    el.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+});
+
+modal.onclick = function() {
+  modal.style.display = "none";
+}
