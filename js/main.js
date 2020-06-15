@@ -117,14 +117,14 @@ function closeInquiryForm() {
 };
 
 
-//horizontal scrolling
+/* horizontal scrolling
 
 (function () {
 
 	scrollConverter.activate();
 
 }());
-
+*/
 
 // modal
 var modal = document.getElementById('modal-frame');
