@@ -125,7 +125,7 @@
     }
   },
   "cart": {
-    "startOpen": true,
+    "startOpen": false,
     "styles": {
       "button": {
         "font-size": "13px",
