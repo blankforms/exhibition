@@ -1,3 +1,5 @@
+//version 1.0.1
+
 //multi-images
 
 window.addEventListener('load', () => {
