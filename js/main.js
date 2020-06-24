@@ -21,6 +21,14 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+// implementation of above for width values
+let vw = window.innerWidth * 0.01;
+document.documentElement.style.setProperty('--vw', `${vw}px`);
+window.addEventListener('resize', () => {
+  let vw = window.innerWidth * 0.01;
+  document.documentElement.style.setProperty('--vw', `${vw}px`);
+});
+
 //multi-images
 
 window.addEventListener('load', () => {
