@@ -171,7 +171,9 @@ var formDetails = document.getElementBy('form-details');
     //let formDetails = document.getElementBy('form-details')
     function openInquiryForm() {
       document.getElementById("inquiry-form-container").style.display = "block";
-      formDetails.innerHTML = entryDetails;
+      //formDetails.innerHTML = entryDetails;
+      formDetails.innerHTML = this.getElementById('entry-details').innerHTML;
+
 
     };
 });
