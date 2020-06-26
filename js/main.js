@@ -1,4 +1,4 @@
-//version 1.0.7.3
+//version 1.0.7.4
 
 // horizontal scrolling
 (function () {
@@ -174,7 +174,7 @@ var formDetails = document.getElementBy('form-details');
       formDetails.innerHTML = entryDetails;
 
     };
-};
+});
 
 
 function openInquiryForm() {
