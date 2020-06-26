@@ -1,4 +1,4 @@
-//version 1.0.7.4
+//version 1.0.7.6
 
 // horizontal scrolling
 (function () {
@@ -172,7 +172,8 @@ var formDetails = document.getElementBy('form-details');
     function openInquiryForm() {
       document.getElementById("inquiry-form-container").style.display = "block";
       //formDetails.innerHTML = entryDetails;
-      formDetails.innerHTML = this.getElementById('entry-details').innerHTML;
+      //formDetails = entryDetails;
+      formDetails.innerHTML = el.getElementById('entry-details').innerHTML;
 
 
     };
