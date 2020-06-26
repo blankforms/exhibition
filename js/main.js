@@ -1,4 +1,4 @@
-//version 1.0.7.7
+//version 1.0.7.8
 
 // horizontal scrolling
 (function () {
@@ -161,27 +161,23 @@ modal.onclick = function() {
 
 //inquiry form
 
-var form = document.getElementById('inquiry-form');
+var form = document.getElementById('inquiry-form-container');
 var entryDetails = document.getElementById('entry-details');
 var formDetails = document.getElementById('form-details');
 
-[].forEach.call(document.getElementsByID('entry'), (el) =>  {
-    //let form = document.getElementById('inquiry-form')
-    //let entryDetails = document.getElementById('entry-details')
-    //let formDetails = document.getElementBy('form-details')
-    function openInquiryForm() {
-      document.getElementById("inquiry-form-container").style.display = "block";
-      //formDetails.innerHTML = entryDetails;
-      //formDetails = entryDetails;
-      formDetails.innerHTML = el.getElementById('entry-details').innerHTML;
-
-
-    };
-});
+//[].forEach.call(document.getElementsByID('entry'), (el) =>  {
+//    function openInquiryForm() {
+//      document.getElementById("inquiry-form-container").style.display = "block";
+//      //formDetails.innerHTML = el.getElementById('entry-details').innerHTML;
+//
+//
+//    };
+//});
 
 
 function openInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "block";
+  formDetails.innerHTML = entryDetails.innerHTML;
 };
 
 function closeInquiryForm() {
