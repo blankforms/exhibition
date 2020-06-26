@@ -1,5 +1,12 @@
 //version 1.0.1
 
+// horizontal scrolling
+(function () {
+
+	scrollConverter.activate();
+
+}());
+
 //iOS resizing issue from portrait to landscape
 //https://stackoverflow.com/questions/5434656/ipad-layout-scales-up-when-rotating-from-portrait-to-landscape
 
@@ -146,10 +153,6 @@ function openInquiryForm() {
 function closeInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "none";
 };
-
-
-// horizontal scrolling
-scrollConverter.activate();
 
 
 
