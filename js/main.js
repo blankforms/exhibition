@@ -1,4 +1,4 @@
-//version 1.0.7.2
+//version 1.0.7.3
 
 // horizontal scrolling
 (function () {
@@ -161,9 +161,9 @@ modal.onclick = function() {
 
 //inquiry form
 
-var form = document.getElementById('inquiry-form')
-var entryDetails = document.getElementById('entry-details')
-var formDetails = document.getElementBy('form-details')
+var form = document.getElementById('inquiry-form');
+var entryDetails = document.getElementById('entry-details');
+var formDetails = document.getElementBy('form-details');
 
 [].forEach.call(document.getElementsByID('entry'), (el) =>  {
     //let form = document.getElementById('inquiry-form')
