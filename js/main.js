@@ -1,4 +1,4 @@
-//version 1.0.1
+//version 1.0.7.2
 
 // horizontal scrolling
 (function () {
@@ -143,27 +143,6 @@ videoplayerexample.onclick = function () {
     return false;
 };
 
-
-//inquiry form
-var form = document.getElementById('inquiry-form')
-var entryDetails = document.getElementById('entry-details')
-var formDetails = document.getElementBy('form-details')
-
-[].forEach.call(document.getElementsByID('form-details'), (el) =>  {
-    el.querySelector('#form-details').innerHTML = entryDetails;
-};
-
-
-function openInquiryForm() {
-  document.getElementById("inquiry-form-container").style.display = "block";
-};
-
-function closeInquiryForm() {
-  document.getElementById("inquiry-form-container").style.display = "none";
-};
-
-
-
 // modal
 var modal = document.getElementById('modal-frame');
 var img = document.getElementsByClassName('modal-enabled');
@@ -179,3 +158,29 @@ var modalImg = document.getElementById("modal-image");
 modal.onclick = function() {
   modal.style.display = "none";
 }
+
+//inquiry form
+
+var form = document.getElementById('inquiry-form')
+var entryDetails = document.getElementById('entry-details')
+var formDetails = document.getElementBy('form-details')
+
+[].forEach.call(document.getElementsByID('entry'), (el) =>  {
+    //let form = document.getElementById('inquiry-form')
+    //let entryDetails = document.getElementById('entry-details')
+    //let formDetails = document.getElementBy('form-details')
+    function openInquiryForm() {
+      document.getElementById("inquiry-form-container").style.display = "block";
+      formDetails.innerHTML = entryDetails;
+
+    };
+};
+
+
+function openInquiryForm() {
+  document.getElementById("inquiry-form-container").style.display = "block";
+};
+
+function closeInquiryForm() {
+  document.getElementById("inquiry-form-container").style.display = "none";
+};
