@@ -153,7 +153,6 @@ scrollConverter.activate();
 
 
 
-
 // modal
 var modal = document.getElementById('modal-frame');
 var img = document.getElementsByClassName('modal-enabled');
