@@ -145,6 +145,14 @@ videoplayerexample.onclick = function () {
 
 
 //inquiry form
+var form = document.getElementById('inquiry-form')
+var entryDetails = document.getElementById('entry-details')
+var formDetails = document.getElementBy('form-details')
+
+[].forEach.call(document.getElementsByID('form-details'), (el) =>  {
+    el.querySelector('#form-details').innerHTML = entryDetails;
+};
+
 
 function openInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "block";
