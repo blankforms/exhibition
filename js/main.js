@@ -1,4 +1,4 @@
-//version 1.0.8
+//version 1.0.8.1
 
 //iOS resizing issue from portrait to landscape
 //https://stackoverflow.com/questions/5434656/ipad-layout-scales-up-when-rotating-from-portrait-to-landscape
@@ -168,6 +168,17 @@ function closeInquiryForm() {
   document.getElementById("inquiry-form-container").style.display = "none";
 };
 
+
+function sendMail() {
+    var link = "mailto:wyatt.c.gormley@gmail.com"
+             + "?cc="
+             + "&subject=" + escape("Inquiry Request for ")
+             + escape(document.getElementById('form-details').textContent.slice(0, 20))
+             + "&body=" + escape(document.getElementById('inquiry-mail').value)
+    ;
+
+    window.location.href = link;
+};
 
 // horizontal scrolling
 (function () {
