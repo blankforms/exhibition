@@ -1,4 +1,4 @@
-//version 1.0.8.1
+//version 1.0.8.2
 
 //iOS resizing issue from portrait to landscape
 //https://stackoverflow.com/questions/5434656/ipad-layout-scales-up-when-rotating-from-portrait-to-landscape
@@ -183,4 +183,4 @@ function sendMail() {
 // horizontal scrolling
 (function () {
 	scrollConverter.activate();
-}());
+})();
