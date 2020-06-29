@@ -181,7 +181,7 @@ function sendMail() {
              + "?cc="
              + "&subject=" + escape("Inquiry Request for ")
              + escape(document.getElementById('form-details').textContent.slice(0, 20))
-             + "&body=" + escape(document.getElementById('inquiry-mail').value) + escape("<br>".value) + escape(document.getElementById('return-address').value)
+             + "&body=" + escape(document.getElementById('inquiry-mail').value) + "%0A" + escape(document.getElementById('return-address').value)
     ;
 
     window.location.href = link;
