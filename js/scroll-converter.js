@@ -1,12 +1,12 @@
 /*
-scrollConverter 1.0.5
+scrollConverter 1.0.6
 ! 1.0.5 set all Y axis offset to 0
 https://github.com/koggdal/scroll-converter
 
 Copyright 2011–2020 Johannes Koggdal (http://koggdal.com/)
 Developed for BombayWorks (http://bombayworks.com/)
 
-Released under MIT license
+Released under MIT licensef
 */
 
 window.scrollConverter = (function (window, document, undefined) {
@@ -80,15 +80,15 @@ window.scrollConverter = (function (window, document, undefined) {
 			if (newOffset >= 0 && newOffset <= maxOffset) {
 				offset.x = newOffset;
 				offset.setByScript = true;
-				//window.scrollTo(offset.x, offset.y);
-                window.scrollTo(offset.x, 0);
+				window.scrollTo(offset.x, offset.y);
+                //window.scrollTo(offset.x, 0);
 			}
 			// Keep the offset within the boundaries
 			else if (offset.x !== 0 && offset.x !== maxOffset) {
 				offset.x = newOffset > maxOffset ? maxOffset : 0;
 				offset.setByScript = true;
-                //window.scrollTo(offset.x, offset.y);
-				window.scrollTo(offset.x, 0);
+                window.scrollTo(offset.x, offset.y);
+				//window.scrollTo(offset.x, 0);
 			}
 
 			// Fire the callback
