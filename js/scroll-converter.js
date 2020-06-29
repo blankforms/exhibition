@@ -152,7 +152,8 @@ window.scrollConverter = (function (window, document, undefined) {
 					// Update the offset variable when the normal scrollbar is used
 					if (!offset.setByScript) {
 						offset.x = getOffset("x");
-						offset.y = getOffset("y");
+						//offset.y = getOffset("y");
+                        offset.y = 0;
 					}
 					offset.setByScript = false;
 				};
