@@ -1,4 +1,4 @@
-//version 1.0.9.3
+//version 1.0.9.4
 
 //iOS resizing issue from portrait to landscape
 //https://stackoverflow.com/questions/5434656/ipad-layout-scales-up-when-rotating-from-portrait-to-landscape
@@ -177,7 +177,7 @@ function closeInquiryForm() {
 
 
 function sendMail() {
-    var link = "mailto:wyatt.c.gormley@gmail.com"
+    var link = "mailto:julia@blankforms.org"
              + "?cc="
              + "&subject=" + escape("Inquiry Request for ")
              + escape(document.getElementById('form-details').textContent.slice(0, 20))
