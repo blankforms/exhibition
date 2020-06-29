@@ -1,6 +1,6 @@
 /*
 scrollConverter 1.0.6
-! 1.0.5 set all Y axis offset to 0
+! 1.0.5 set all Y axis offset to 0 lines 84, 95, 155
 https://github.com/koggdal/scroll-converter
 
 Copyright 2011–2020 Johannes Koggdal (http://koggdal.com/)
@@ -152,8 +152,8 @@ window.scrollConverter = (function (window, document, undefined) {
 					// Update the offset variable when the normal scrollbar is used
 					if (!offset.setByScript) {
 						offset.x = getOffset("x");
-						//offset.y = getOffset("y");
-                        offset.y = 0;
+						offset.y = getOffset("y");
+                        //offset.y = 0;
 					}
 					offset.setByScript = false;
 				};
