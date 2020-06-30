@@ -179,7 +179,7 @@ function closeInquiryForm() {
 function sendMail() {
     var link = "mailto:julia@blankforms.org"
              + "?cc="
-             + "&subject=" + escape("Inquiry Request for ")
+             + "&subject=" + escape("Inquiry Request for Graham Lambkin, ")
              + escape(document.getElementById('form-details').textContent.slice(0, 20))
              + "&body=" + escape(document.getElementById('inquiry-mail').value) + escape('\n\nreturn address: ') + escape(document.getElementById('return-address').value)
     ;
