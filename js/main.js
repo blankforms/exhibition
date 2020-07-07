@@ -105,36 +105,36 @@ audioctrl.onclick = function () {
 
 //video player
 
-var videoplayerexample = document.getElementById('videoplayerexample');
-var videoctrl = document.getElementById('videoctrl');
+//var videoplayerexample = document.getElementById('videoplayerexample');
+//var videoctrl = document.getElementById('videoctrl');
 
-videoctrl.onclick = function () {
-
-    // Update the Button
-    var pause = videoctrl.innerHTML === 'Stop playing';
-    videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
-
-    // Update the video
-    var method = pause ? 'pause' : 'play';
-    videoplayerexample[method]();
-
-    // Prevent Default Action
-    return false;
-};
-
-videoplayerexample.onclick = function () {
+//videoctrl.onclick = function () {
 
     // Update the Button
-    var pause = videoctrl.innerHTML === 'Stop playing';
-    videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
+    //var pause = videoctrl.innerHTML === 'Stop playing';
+    //videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
 
     // Update the video
-    var method = pause ? 'pause' : 'play';
-    videoplayerexample[method]();
+    //var method = pause ? 'pause' : 'play';
+    //videoplayerexample[method]();
 
     // Prevent Default Action
-    return false;
-};
+    //return false;
+//};
+
+//videoplayerexample.onclick = function () {
+
+    // Update the Button
+    //var pause = videoctrl.innerHTML === 'Stop playing';
+    //videoctrl.innerHTML = pause ? 'Play video' : 'Stop playing';
+
+    // Update the video
+    //var method = pause ? 'pause' : 'play';
+    //videoplayerexample[method]();
+
+    // Prevent Default Action
+    //return false;
+//};
 
 // modal
 var modal = document.getElementById('modal-frame');
