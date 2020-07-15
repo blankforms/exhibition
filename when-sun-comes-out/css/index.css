@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+:root {
+  --header-height:100px;
+  --content-width:100vw;
+}
+
+@font-face {
+  font-family: "garamond-bf";
+  src: url("./fonts/Garamond-BF-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garamond-bf";
+  src: url("./fonts/Garamond-BF-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gerst";
+  src: url("./fonts/GerstnerProgrammFSL-Regular.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "libertine-mono";
+  src: url("./fonts/LinLibertine_M.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("./fonts/FUTURAB.TTF") format("truetype");
+  font-style: normal;
+}
+
+body {
+  font-family:'garamond-bf', serif;
+  letter-spacing: 0.66px;
+  margin:0;
+  font-size: 0.875rem;
+  line-height:1.25em;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  cursor:pointer;
+}
+
+img {
+  width:100%;
+  height:auto;
+  object-position: center;
+  object-fit: cover;
+  cursor:zoom-in;
+}
+
+.serif {
+    font-family:'garamond-bf', serif;
+}
+
+.sans {
+  font-family: 'gerst', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
