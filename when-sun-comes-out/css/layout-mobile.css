@@ -22,7 +22,7 @@
   }
 
   .grid #artists {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     columns: 1;
     padding-bottom:8rem;
   }

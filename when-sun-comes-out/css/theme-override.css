@@ -61,3 +61,8 @@ p {
 figure {
   margin: 0;
 }
+
+#primary {
+    max-width: 100%;
+    margin: 0;
+}
