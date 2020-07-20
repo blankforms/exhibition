@@ -58,7 +58,7 @@
 }
 
 @font-face {
-  font-family: "FuturaBT-Bold";
+  font-family: "futura-bf";
   src: url("https://cdn.jsdelivr.net/gh/blankforms/exhibition@2.1.0/fonts/FuturaB.eot"); /* IE9 Compat Modes */
   src: url("https://cdn.jsdelivr.net/gh/blankforms/exhibition@2.1.0/fonts/FuturaB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("https://cdn.jsdelivr.net/gh/blankforms/exhibition@2.1.0/fonts/FuturaB.otf") format("opentype"), /* Open Type Font */
