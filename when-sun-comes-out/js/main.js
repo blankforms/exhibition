@@ -12,3 +12,30 @@ var modalImg = document.getElementById("modal-image");
 modal.onclick = function() {
   modal.style.display = "none";
 }
+
+//inquiry form
+
+var form = document.getElementById('inquiry-form-container');
+var formDetails = document.getElementById('form-details');
+
+function openInquiryForm(i) {
+    let entriesDetails = document.getElementsByClassName('entry-details')[parseInt(i)].innerHTML;
+    form.style.display = "block";
+    formDetails.innerHTML = entriesDetails;
+};
+
+function closeInquiryForm() {
+  document.getElementById("inquiry-form-container").style.display = "none";
+};
+
+
+function sendMail() {
+    var link = "mailto:julia@blankforms.org"
+             + "?cc="
+             + "&subject=" + escape("Inquiry Request for Graham Lambkin, ")
+             + escape(document.getElementById('form-details').textContent.slice(0, 20))
+             + "&body=" + escape(document.getElementById('inquiry-mail').value) + escape('\n\nreturn address: ') + escape(document.getElementById('return-address').value)
+    ;
+
+    window.location.href = link;
+};
