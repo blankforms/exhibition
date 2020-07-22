@@ -22,17 +22,12 @@
   }
 
   .grid #artists {
-    font-size:1.5rem;
     grid-column: 1 / -1;
     columns: 1;
     padding-bottom:8rem;
   }
 
   .grid #artists a {
-  }
-
-  .grid #intro {
-    columns: 1;
   }
 
   .L {
@@ -120,6 +115,17 @@
       width:auto;
   }
 
+  .works-list {
+    justify-content: space-around;
+    width: 100vw;
+    min-height: 100vh;
+    height: 700vh;
+    flex-direction: column;
+    padding: 4rem 1rem 4rem 1rem; /*2rem*/
+  }
+  .works-list .entry {
+    margin: auto;
+  }
 
 
 
