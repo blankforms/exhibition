@@ -24,7 +24,7 @@
 }
 
 .grid #artists {
-  font-size:1.5rem;
+  font-size:2rem;
   line-height: 1.125em;
   grid-column: 4 / 16;
   columns: 3;

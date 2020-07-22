@@ -22,12 +22,17 @@
   }
 
   .grid #artists {
+    font-size:1.5rem;
     grid-column: 1 / -1;
     columns: 1;
     padding-bottom:8rem;
   }
 
   .grid #artists a {
+  }
+
+  .grid #intro {
+    columns: 1;
   }
 
   .L {
