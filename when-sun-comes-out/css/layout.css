@@ -115,7 +115,6 @@
   position:sticky;
   bottom:1rem;
   margin:0 2rem 0 2rem;
-  font-size:1rem;
   display:grid;
   grid-template-columns: repeat(18, 1fr);
   grid-column-gap: 2rem;
