@@ -72,7 +72,7 @@
 
 body {
   font-family:'garamond-bf', serif;
-  letter-spacing: 0.66px;
+  letter-spacing: 0.05em;
   margin:0;
   font-size: 0.875rem;
   line-height:1.25em;
@@ -92,6 +92,15 @@ img {
   cursor:zoom-in;
 }
 
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+p:first-of-type {
+  margin-block-start:0;
+}
+
 .serif {
     font-family:'garamond-bf', serif;
 }
@@ -102,4 +111,19 @@ img {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+#intro {
+  font-size:1.5rem;
+  line-height:1.125em;
+}
+
+#intro .secondary {
+  font-size:0.875rem;
+  line-height: 1.25em;
+}
+
+#artists {
+  font-size:2rem;
+  line-height: 1.125em;
 }
