@@ -29,6 +29,10 @@
 
   .grid #artists a {
   }
+  
+  .grid .entry {
+    grid-column: 1 / -1;
+  }
 
   .L {
     max-width:100%;
