@@ -203,7 +203,6 @@
 /*Inquiry Form*/
 
 #inquiry-form-container {
-  font-size: 1rem;
   display:none;
   position:fixed;
   top:0;
@@ -233,12 +232,12 @@
 textarea {
 background-color:transparent;
 border:1px solid black;
+border-radius:0;
 outline: 0;
 z-index: 4;
 min-height:10rem;
 max-height:50rem;
 width: 100%;
-font-size:1rem;
 margin: 0.3rem;
 font-family: 'libertine-mono', monospace;
 vertical-align: top;
