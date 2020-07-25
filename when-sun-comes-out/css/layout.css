@@ -253,7 +253,6 @@ resize: vertical;
 #return-address {
   margin-top: 1rem;
   min-height: 1rem;
-  max-height: 2rem;
   overflow-y: hidden;
-  font-size: 0.8rem;
+  resize:none;
 }
