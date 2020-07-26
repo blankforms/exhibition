@@ -246,6 +246,7 @@ max-height:50rem;
 width: 100%;
 font-family: 'libertine-mono', monospace;
 font-size: .875rem;
+margin: .3rem 0 .3rem 0;
 vertical-align: top;
 resize: vertical;
 }
