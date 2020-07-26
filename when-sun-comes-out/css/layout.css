@@ -245,6 +245,7 @@ min-height:10rem;
 max-height:50rem;
 width: 100%;
 font-family: 'libertine-mono', monospace;
+font-size: .875rem;
 vertical-align: top;
 resize: vertical;
 }
@@ -252,7 +253,7 @@ resize: vertical;
 #return-address {
   margin-top: 1rem;
   min-height: 1rem;
-  max-height: 3rem;
+  max-height: 2.625rem;
   overflow-y: hidden;
   resize:none;
 }
