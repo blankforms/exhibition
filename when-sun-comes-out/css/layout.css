@@ -247,15 +247,14 @@ max-height:50rem;
 width: 100%;
 font-family: 'libertine-mono', monospace;
 font-size: .875rem;
-margin: .3rem 0 .3rem 0;
+margin: .5rem 0 .5rem 0;
 vertical-align: top;
 resize: vertical;
 }
 
 #return-address {
-  margin-top: 1rem;
   min-height: 1rem;
-  max-height: 2.625rem;
+  max-height: 2.2rem;
   overflow-y: hidden;
   resize:none;
 }
