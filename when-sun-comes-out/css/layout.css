@@ -8,6 +8,10 @@
   margin-bottom:20rem;
 }
 
+.halved-rows {
+    grid-row-gap:6rem;
+}
+
 .grid #intro {
   grid-column: 1/-1;
   min-height:100vh;
