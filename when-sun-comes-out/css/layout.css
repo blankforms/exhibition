@@ -55,6 +55,7 @@
 
 .grid .entry {
   grid-column: auto / span 2;
+  align-self: end;
 }
 
 .L {
