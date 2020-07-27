@@ -40,8 +40,8 @@
   margin-bottom:20rem;
 }
 
-.detail {
-  justify-content: space-around;
+.grid .detail {
+  justify-content: space-around !important;
 }
 
 .grid #artists {
