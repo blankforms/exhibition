@@ -5,7 +5,7 @@ var modalImg = document.getElementById("modal-image");
 [].forEach.call(document.getElementsByTagName('img'), (el) =>  {
     el.onclick = function(){
       modal.style.display = "block";
-      modalImg.src = this.src;
+      modalImg.src = this.src.replace("1200px/", "").replace("240px/", "");
     }
 });
 
