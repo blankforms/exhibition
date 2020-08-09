@@ -29,9 +29,13 @@
 
   .grid #artists a {
   }
-  
+
+  .halved-rows {
+  }
+
+
   .grid .entry {
-    grid-column: 1 / -1;
+    grid-column: auto / span 6;
   }
 
   .L {
