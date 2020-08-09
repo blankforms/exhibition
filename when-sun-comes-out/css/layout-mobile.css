@@ -31,6 +31,8 @@
   }
 
   .halved-rows {
+    grid-row-gap:8rem;
+
   }
 
 
