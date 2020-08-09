@@ -10,7 +10,7 @@
   .grid #intro {
     grid-column: 1/-1;
     min-height:100vh;
-    columns:2;
+    columns:1;
     column-gap: 1rem;
   }
 
@@ -112,25 +112,24 @@
   /* modal */
 
   #modal-frame {
-      display: none;
-      position: fixed;
-      z-index: 4;
-      line-height: 0;
-  	  left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 100vh;
-      overflow-x: scroll;
-      overflow-y: hidden;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    line-height: 0;
+  	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    overflow: auto;
   	cursor: zoom-out;
     padding:0;
   }
 
   .modal-content {
     margin: auto;
-      height:100%;
-      width:auto;
-      overflow-x: scroll;
+    height:100%;
+    width:auto;
+    overflow: auto;
   }
 
 }
