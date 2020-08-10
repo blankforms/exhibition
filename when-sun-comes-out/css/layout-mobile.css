@@ -121,7 +121,7 @@
     transform: translate(-50%, -50%);
     cursor: zoom-out;
     padding:0;
-    margin: auto -20px 0;
+    margin: 0 -10px 0 -10px;
     height: 100vh;
     max-width: 100vw;
     overflow-x: scroll;
@@ -132,6 +132,7 @@
     height:100%;
     width: 100%;
     overflow-y: hidden;
+    overflow-x: scroll;
   }
 
 }
