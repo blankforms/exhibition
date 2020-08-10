@@ -135,7 +135,7 @@
     overflow-x: scroll;
   }
 
-  #modal-frame .modal-content img {
+  #modal-frame img {
     width: initial;
   }
 }
