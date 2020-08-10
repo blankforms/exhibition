@@ -137,6 +137,7 @@
 
   #modal-frame img {
     width: initial;
+    max-width: initial;
   }
 }
 
