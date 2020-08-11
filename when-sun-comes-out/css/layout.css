@@ -63,6 +63,9 @@
 .grid .entry {
   grid-column: auto / span 2;
 }
+.grid img {
+  cursor:zoom-in;
+}
 
 @media screen and (max-width:1300px) {
   .grid .entry {
@@ -170,7 +173,6 @@
 	max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-	cursor: zoom-out;
 }
 
 .modal-content {
@@ -179,6 +181,9 @@
     overflow-x: hidden;
 }
 
+#modal-frame {
+    cursor: zoom-out;
+}
 /*Inquiry Form*/
 
 #inquiry-form-container {
