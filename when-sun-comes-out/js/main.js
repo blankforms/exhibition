@@ -33,7 +33,7 @@ function sendMail() {
     var link = "mailto:julia@blankforms.org"
              + "?cc="
              + "&subject=" + escape("Inquiry Request for ")
-             + escape(document.getElementById('form-details').textContent.slice(0, 20))
+             + escape(document.getElementById('form-details').textContent.slice(0, 40))
              + "&body=" + escape(document.getElementById('inquiry-mail').value) + escape('\n\nreturn address: ') + escape(document.getElementById('return-address').value)
     ;
 
