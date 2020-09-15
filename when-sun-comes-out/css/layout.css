@@ -131,6 +131,12 @@
   font-family:'futura-bf', sans-serif;
 }
 
+#inquiries {
+    margin: 55vh 0 55vh 0;
+    display: inline;
+    text-align: center;
+}
+
 .footer {
   position:sticky;
   bottom:1rem;
