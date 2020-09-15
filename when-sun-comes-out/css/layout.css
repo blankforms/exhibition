@@ -132,9 +132,16 @@
 }
 
 #inquiries {
-    margin: 55vh 0 55vh 0;
     display: inline;
     text-align: center;
+}
+
+#inquiries .serif {
+    margin-top: 55vh;
+}
+
+#inquiries .sans {
+    margin-bottom: 55vh;
 }
 
 .footer {
