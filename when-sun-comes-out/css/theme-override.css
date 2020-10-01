@@ -28,7 +28,7 @@
 }
 
 /*1*/
-.event__title-page {
+h1.event__title-page {
     display: none;
 }
 
