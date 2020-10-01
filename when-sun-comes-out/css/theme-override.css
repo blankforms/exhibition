@@ -28,6 +28,9 @@
 }
 
 /*1*/
+h1 {
+    display: none;
+}
 
 body {
   color: black;
