@@ -1,3 +1,12 @@
+/* exhibitions custom type adjust*/
+.single-event-container .entry-content {
+    width: initial;
+    padding left: initial;
+    margin top: initial;
+    max width: initial;
+    float: initial;
+}
+
 /* header and padding adjust */
 
 .navigation-top, .entry-header, .site-header, .custom-header, .custom-header-media, .site-branding, .blankforms-advert {
