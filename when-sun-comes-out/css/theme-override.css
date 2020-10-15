@@ -1,10 +1,15 @@
 /* exhibitions custom type adjust*/
 .single-event-container .entry-content {
     width: initial;
-    padding left: initial;
-    margin top: initial;
-    max width: initial;
+    padding-left: initial;
+    margin-top: initial;
+    max-width: initial;
     float: initial;
+}
+
+body:not(.twentyseventeen-front-page) .entry-content {
+    margin-left: initial;
+    margin-right: initial;
 }
 
 /* header and padding adjust */
