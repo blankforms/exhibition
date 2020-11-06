@@ -1,0 +1,175 @@
+@media only screen and (max-width: 780px) {
+  .grid {
+    margin:var(--header-height) 1rem 1rem 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap:1rem;
+    margin-bottom:10rem;
+  }
+
+  .grid #intro {
+    grid-column: 1/-1;
+    min-height:100vh;
+    columns:1;
+    column-gap: 1rem;
+  }
+
+  .grid .caption {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+
+  .grid .bio {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    margin-bottom: 8rem;
+  }
+
+  .grid .image {
+    grid-column: 1 / -1;
+    margin-bottom:0;
+  }
+
+  .grid #artists {
+    grid-column: 1 / -1;
+    columns: 1;
+    padding-bottom: 8rem;
+  }
+
+  .grid #artists a {
+  }
+
+  .halved-rows {
+    grid-row-gap: 4rem;
+  }
+
+
+  .grid .entry {
+    grid-column: auto / span 6;
+  }
+
+  .L {
+    max-width:100%;
+  }
+
+  .M {
+    max-width:100%;
+  }
+
+  .S {
+    max-width:100%;
+  }
+
+  .header {
+  }
+
+  .when {
+    grid-column: 2 / -1;
+  }
+
+  .sun {
+    grid-column: 5 / -1;
+  }
+
+  .comes {
+    grid-column: 4 / -1;
+  }
+
+  .out {
+    grid-column: 9 / -1;
+  }
+
+  .when, .sun, .comes, .out, .quote, .unquote {
+    margin-bottom: 8rem;
+    font-size: 3rem;
+  }
+
+  .footer {
+    bottom:1rem;
+    margin:0 1rem 0 1rem;
+    font-size: 0.875rem;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100% 1px auto;
+    grid-column-gap: 1rem;
+  }
+
+  .footer > a:nth-of-type(1) {
+    grid-column: 1 / 3;
+  }
+
+  .footer > a:nth-of-type(2) {
+    grid-column: 3 / 6;
+  }
+
+  .footer > a:nth-of-type(3) {
+    grid-column: 5 / -1;
+    justify-self: end;
+  }
+
+  .footer > a:last-of-type {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  /* modal */
+  #modal-frame {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    line-height: 0;
+  	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .modal-content {
+    height:100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  #modal-frame img {
+    width: initial;
+    max-width: initial;
+    max-height: 100vh;
+    display: block;
+    margin: auto;
+    cursor: zoom-out;
+  }
+}
+@media only screen and (max-width: 780px) and (orientation: landscape) {
+    .grid #intro {
+      grid-column: 1/-1;
+      min-height:100vh;
+      columns:1;
+      column-gap: 1rem;
+    }
+
+    .grid .caption {
+      grid-column: 9 / -1;
+      margin-top: 100px;
+    }
+
+    .grid .bio {
+      grid-column: 1 / -1;
+      margin-top: 0;
+      margin-bottom:8rem;
+    }
+
+    .grid .image {
+      grid-column: 1 / 9;
+      margin-bottom:0;
+    }
+}
+@media only screen and (max-width: 350px) {
+  .footer {
+    display:none;
+  }
+}
